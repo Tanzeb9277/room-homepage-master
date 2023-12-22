@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'League Spartan', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.top {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+}
+
+.hero {
+    flex: 4 1 0;
+}
+
+
+
+.nav {
+    position: absolute;
+    display: flex;
+    color: white;
+    width: 450px;
+    justify-content: space-around;
+    left: 30px;
+    top: 35px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav-options li:hover{
+    border-bottom: 2.5px solid #ffffff;
+}
+
+.logo {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide-container {
+    flex: 3 1 0;
+}
+
+.slide-info {
+    display: none;
+    width: 69%;
+    margin: 90px auto;
+}
+
+.display{
+    display: block;
+}
+
+.slide-info * {
+    margin-bottom: 20px;
+}
+
+h1.slide-header {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.slide-text {
+    color: #bdbdbd;
+}
+
+.shop-now {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 12px;
+    font-weight: bolder;
+}
+
+.shop-now img{
+    margin: 0 0 3px 0;
+}
+
+.slide-switcher {
+    background: black;
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 188px;
+    top: 43.5vh;
+}
+
+.previous-slide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-slide img {
+    width: 25%;
+}
+
+.next-slide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-slide img {
+    width: 25%;
+}
+
+.about {
+    width: 100vw;
+    display: flex;
+    height: 35vh;
+    box-sizing: border-box;
+}
+
+.image-about-left {
+    flex: 3 1 0;
+}
+
+.image-about-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-text {
+    padding: 75px;
+    flex: 3 1 0;
+}
+
+.image-about-right {
+    flex: 3 1 0;
+}
+
+.image-about-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.open-btn{
+    display: none;
+}
+
+#close-btn{
+    display: none;
+}
+
+@media (max-width:775px) {
+
+    .nav {
+        width: 100vw;
+        left: 0; 
+        top: 35px;
+    }
+
+    .nav ul {
+        position: absolute;
+        background: white;
+        height: 10vh;
+        top: -35px;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        color: black;
+        transform: translateX(-100vw);
+    }
+
+    .open-btn{
+        display: block;
+        position: absolute;
+        left: 10vw;
+        top: 0.5vh;
+    }
+    
+    #close-btn{
+        display: block;
+        padding: 0 57px 0 25px;
+    }
+
+    .top {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .about {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .slide-switcher {
+        position: absolute;
+        height: 63px;
+        width: 134px;
+        top: -44%;
+        right: 8px;
+    }
+
+}
